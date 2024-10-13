@@ -40,8 +40,6 @@ class Fruit(Plant): #класс фруктов
 
 
 
-
-
 a1 = Predator('Волк с Уолл-Стрит')
 a2 = Mammal('Хатико')
 p1 = Flower('Цветик семицветик')
