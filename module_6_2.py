@@ -1,11 +1,11 @@
 class Vehicle:
     """Класс транспорта"""
 
-    def __init__(self, owner: str, __model: str, __engine_power: int, __color: str):
+    def __init__(self, owner: str, model: str, engine_power: int, color: str):
         self.owner = owner #владелец транспорта
-        self.__model = __model #модель (марка) транспорта
-        self.__engine_power = __engine_power #мощность двигателя
-        self.__color = __color #название цвета
+        self.__model = model #модель (марка) транспорта
+        self.__engine_power = engine_power #мощность двигателя
+        self.__color = color #название цвета
 
     __COLOR_VARIANTS = ['blue', 'red', 'green', 'black', 'white']
 
@@ -32,7 +32,7 @@ class Vehicle:
 
 class Sedan(Vehicle):
     """Класс седана. Наследник класса транспорта"""
-    pass
+    __PASSENGERS_LIMIT = 5 #в седан может поместиться только 5 пассажиров
 
 
 vehicle1 = Sedan('Fedos', 'Toyota Mark II', 500, 'blue')
